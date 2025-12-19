@@ -50,7 +50,7 @@ export default function RootLayout({
           'flex flex-col'
         )}
       >
-        <Script src="https://farcaster.dev/miniapp-sdk.js" strategy="beforeInteractive" />
+
         <Providers>
           <BackgroundMusicProvider>
             <Header />
