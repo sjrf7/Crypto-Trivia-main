@@ -11,7 +11,7 @@ import { Header } from '@/components/layout/Header';
 import { BackgroundMusicProvider } from '@/components/layout/BackgroundMusic';
 import { useEffect } from 'react';
 import Script from 'next/script';
-import sdk from '@farcaster/miniapp-sdk';
+import { sdk } from '@farcaster/miniapp-sdk';
 
 const inter = Inter({
   subsets: ['latin'],
