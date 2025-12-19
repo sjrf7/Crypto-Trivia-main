@@ -1,0 +1,78 @@
+diff --git a/node_modules/@genkit-ai/core/lib/tracing.js b/node_modules/@genkit-ai/core/lib/tracing.js
+index 4016f55..65d6db8 100644
+--- a/node_modules/@genkit-ai/core/lib/tracing.js
++++ b/node_modules/@genkit-ai/core/lib/tracing.js
+@@ -34,11 +34,7 @@
+ let tracerProvider;
+ let traceExporter;
+ async function getTracerProvider() {
+-    var _a;
+     if (tracerProvider) {
+         return tracerProvider;
+     }
+-    const { OTLPTraceExporter } = await import('@opentelemetry/exporter-trace-otlp-http');
+-    const { JaegerExporter } = await import('@opentelemetry/exporter-jaeger');
+-    const { NodeSDK } = await import('@opentelemetry/sdk-node');
+     const { forceTracing, telemetry: telemetryConfig, devTelemetry: devTelemetryConfig, } = (0, configuration_1.getGenkitConfig)();
+     let exporter = telemetryConfig === null || telemetryConfig === void 0 ? void 0 : telemetryConfig.exporter;
+     if ((0, state_1.isDev)() && !forceTracing) {
+@@ -52,19 +48,7 @@
+         return;
+     }
+     traceExporter = exporter;
+-    // TODO: This should be configurable.
+-    const sdk = new NodeSDK({
+-        // TODO: Add service name here.
+-        traceExporter: exporter,
+-    });
+-    try {
+-        const { instrumentFirebase } = await import('@genkit-ai/firebase');
+-        instrumentFirebase(sdk);
+-    }
+-    catch (e) {
+-        // Firebase plugin not installed.
+-    }
+-    await ((_a = sdk.start) === null || _a === void 0 ? void 0 : _a.call(sdk));
++    // Disabled all OpenTelemetry SDK initialization to prevent build errors.
+     return;
+ }
+ exports.getTracerProvider = getTracerProvider;
+diff --git a/node_modules/@genkit-ai/core/lib/tracing.mjs b/node_modules/@genkit-ai/core/lib/tracing.mjs
+index 722659c..3ac3992 100644
+--- a/node_modules/@genkit-ai/core/lib/tracing.mjs
++++ b/node_modules/@genkit-ai/core/lib/tracing.mjs
+@@ -25,11 +25,7 @@
+ let tracerProvider;
+ let traceExporter;
+ async function getTracerProvider() {
+-    var _a;
+     if (tracerProvider) {
+         return tracerProvider;
+     }
+-    const { OTLPTraceExporter } = await import('@opentelemetry/exporter-trace-otlp-http');
+-    const { JaegerExporter } = await import('@opentelemetry/exporter-jaeger');
+-    const { NodeSDK } = await import('@opentelemetry/sdk-node');
+     const { forceTracing, telemetry: telemetryConfig, devTelemetry: devTelemetryConfig, } = getGenkitConfig();
+     let exporter = telemetryConfig === null || telemetryConfig === void 0 ? void 0 : telemetryConfig.exporter;
+     if (isDev() && !forceTracing) {
+@@ -43,19 +39,7 @@
+         return;
+     }
+     traceExporter = exporter;
+-    // TODO: This should be configurable.
+-    const sdk = new NodeSDK({
+-        // TODO: Add service name here.
+-        traceExporter: exporter,
+-    });
+-    try {
+-        const { instrumentFirebase } = await import('@genkit-ai/firebase');
+-        instrumentFirebase(sdk);
+-    }
+-    catch (e) {
+-        // Firebase plugin not installed.
+-    }
+-    await ((_a = sdk.start) === null || _a === void 0 ? void 0 : _a.call(sdk));
++    // Disabled all OpenTelemetry SDK initialization to prevent build errors.
+     return;
+ }
+ function getTracer(name) {

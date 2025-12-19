@@ -1,0 +1,19 @@
+{
+  "frame": {
+    "name": "Crypto Trivia Showdown",
+    "version": "1",
+    "iconUrl": "https://crypto-trivia.vercel.app/icon.png",
+    "homeUrl": "https://crypto-trivia.vercel.app/play",
+    "imageUrl": "https://crypto-trivia.vercel.app/splash.png",
+    "splashImageUrl": "https://crypto-trivia.vercel.app/splash.png",
+    "splashBackgroundColor": "#6200EA",
+    "subtitle": "AI-Powered Crypto Trivia",
+    "description": "Test your crypto knowledge with AI quizzes. Challenge friends, unlock achievements, and climb the leaderboard to prove you're a true trivia master.",
+    "primaryCategory": "games"
+  },
+  "accountAssociation": {
+    "header": "eyJmaWQiOjExMjc5NzQsInR5cGUiOiJjdXN0b2R5Iiwia2V5IjoiMHhEMUI3NWRENzVERUJhN0ZFQmUzNEUwMURjNTJhZjNiQjEzOWI2YkUwIn0",
+    "payload": "eyJkb21haW4iOiJjcnlwdG8tdHJpdmlhLnZlcmNlbC5hcHAifQ",
+    "signature": "MHgxMGIyMTAyNmRlNDkwMTE3OTc2ZTQ1NTljMTZiMjg0ZGZlN2E4ODk1MDYxZGYwZmYyNmYyMDg3ZmQ0ODQyZjA2NzRkYjJmNjRjNDlkNjRkYTQ5YjMzNDdhN2UzNmEwODgzYThhMTdhZmYxMGI5Y2ZmYWI3ZjE3OGMyYTE3M2E3MjFj"
+  }
+}

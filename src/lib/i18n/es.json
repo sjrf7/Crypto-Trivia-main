@@ -1,0 +1,1304 @@
+
+{
+  "welcome": {
+    "title": "Crypto Trivia Showdown",
+    "subtitle": "Pon a prueba tus conocimientos sobre criptomonedas, compite contra otros y demuestra que eres un maestro de la trivia.",
+    "cta": "Entrar al Juego",
+    "feature1": {
+      "title": "Trivia por IA",
+      "description": "Ponte a prueba con cuestionarios sobre cualquier tema, generados por IA."
+    },
+    "feature2": {
+      "title": "Modo Clásico",
+      "description": "Enfréntate a nuestras preguntas clásicas y demuestra que eres un experto."
+    },
+    "feature3": {
+      "title": "Tablas de Clasificación",
+      "description": "Compite por el primer puesto y mira cómo te posicionas frente a los mejores."
+    },
+    "feature4": {
+      "title": "Logros y Niveles",
+      "description": "Desbloquea logros y sube de nivel tu perfil mientras juegas."
+    },
+    "feature5": {
+      "title": "Perfil de Farcaster",
+      "description": "Tu progreso se guarda automáticamente en tu perfil de Farcaster."
+    },
+    "feature6": {
+      "title": "Desafíos",
+      "description": "Reta a tus amigos a superar tu puntuación con las mismas preguntas."
+    }
+  },
+  "play": {
+    "title": "Elige tu Modo de Juego",
+    "description": "Selecciona entre nuestra trivia clásica o un juego personalizado generado por IA.",
+    "classic": {
+      "title": "Juego Clásico",
+      "description": "Un conjunto seleccionado de desafiantes preguntas sobre cripto para poner a prueba tus conocimientos.",
+      "button": "Jugar Clásico"
+    },
+    "ai": {
+      "title": "Juego Generado por IA",
+      "description": "Introduce cualquier tema y deja que nuestra IA cree una experiencia de trivia única para ti.",
+      "button": "Jugar con IA"
+    }
+  },
+  "ai_setup": {
+    "title": "Trivia Generada por IA",
+    "description": "¡Introduce cualquier tema y nuestra IA creará un juego de trivia único para ti!",
+    "topic": {
+      "label": "Tema de la Trivia",
+      "placeholder": "Ej: 'Historia de Ethereum' o 'Proyectos NFT Famosos'"
+    },
+    "num_questions": {
+      "label": "Número de Preguntas",
+      "placeholder": "Selecciona el número de preguntas",
+      "option_10": "10 Preguntas",
+      "option_30": "30 Preguntas",
+      "option_50": "50 Preguntas"
+    },
+    "difficulty": {
+      "label": "Dificultad",
+      "placeholder": "Selecciona una dificultad",
+      "easy": "Fácil",
+      "medium": "Media",
+      "hard": "Difícil"
+    },
+    "button": "Generar Juego"
+  },
+  "ai_page": {
+    "error_toast": {
+      "title": "Error al Generar el Juego"
+    },
+    "error_alert": {
+      "title": "Error en la Función de IA"
+    }
+  },
+  "wager": {
+    "title": "¡Se Propone un Duelo!",
+    "description": "{challenger} te ha desafiado a un enfrentamiento de trivia.",
+    "default_message": "¿Crees que puedes superar mi puntuación? ¡A ver si es cierto!",
+    "wager_is": "La apuesta propuesta es:",
+    "for_glory": "¡Por la Gloria!",
+    "on_testnet": "(En la Testnet de Base Sepolia)",
+    "accept_button": "Aceptar y Jugar",
+    "accept_button_loading": "Conectando...",
+    "decline_button": "Rechazar e Ir a Inicio",
+    "escrow_notice": "Los fondos se mantendrán en un contrato de depósito seguro."
+  },
+  "game": {
+    "client": {
+      "title": "Crypto Trivia Showdown",
+      "description": "¡Pon a prueba tus conocimientos de cripto con nuestras preguntas de trivia clásicas o genera un juego personalizado con IA!",
+      "start_classic_button": "Iniciar Juego Clásico"
+    },
+    "screen": {
+      "loading": "Cargando partida...",
+      "challenge_mode": {
+        "title": "Modo Desafío",
+        "description": "¡Supera una puntuación de"
+      },
+      "ai_mode": {
+        "title": "Trivia con IA",
+        "description": "Tema:"
+      }
+    },
+    "question": {
+      "header": "Pregunta {questionNumber} de {totalQuestions}",
+      "powerup_5050": "50/50 (Elimina dos respuestas incorrectas)",
+      "powerup_time": "+15s (Añade 15 segundos al temporizador)"
+    }
+  },
+  "summary": {
+    "title": "¡Fin del Juego!",
+    "description": "Así te fue en la trivia clásica.",
+    "ai_description": "Así te fue en la trivia de {topic}.",
+    "challenge_description": "¡Los resultados del desafío están aquí!",
+    "challenge_win_title": "¡Ganaste!",
+    "challenge_loss_title": "¡Perdiste!",
+    "challenge_tie_title": "¡Es un Empate!",
+    "your_score": "Tu Puntuación",
+    "final_score": "Puntuación Final",
+    "questions_answered": "Respondiste {count} de {total} preguntas.",
+    "play_again_button": "Jugar de Nuevo",
+    "leaderboard_button": "Tabla de Clasificación",
+    "challenge": {
+      "button": "Desafiar a un Amigo",
+      "update_button": "Actualizar Enlace",
+      "title": "Comparte tu Desafío",
+      "description": "Envía este enlace a un amigo. ¡Jugarán con las mismas preguntas e intentarán superar tu puntuación! Añade una apuesta opcional para más diversión.",
+       "message": {
+        "label": "Mensaje de Desafío (Opcional)",
+        "placeholder": "Ej: '¡Supera esta puntuación, si puedes!'"
+      },
+      "wager": {
+        "label": "Apuesta (ETH en Base Sepolia)",
+        "placeholder": "ej., 0.01 (dejar en blanco para no apostar)"
+      },
+      "link": {
+        "label": "Enlace del Desafío",
+        "generating": "Generando..."
+      },
+      "not_logged_in": {
+          "title": "Usuario no encontrado",
+          "description": "Se requieren datos de usuario de Farcaster para desafiar a un amigo."
+      },
+       "ai_disabled": {
+        "title": "Desafío no disponible",
+        "description": "Actualmente, los desafíos solo están disponibles para el modo clásico, no para los juegos generados por IA."
+      },
+      "close_button": "Cerrar"
+    },
+    "toast": {
+      "copied": {
+        "title": "¡Copiado al portapapeles!",
+        "description": "El enlace del desafío está listo para ser compartido."
+      }
+    }
+  },
+  "dock": {
+    "play": "Jugar",
+    "leaderboard": "Clasificación",
+    "achievements": "Logros",
+    "profile": "Perfil"
+  },
+  "leaderboard": {
+    "title": "Tabla de Clasificación",
+    "description": "Mira quién está en la cima del mundo de la trivia cripto. Ve las puntuaciones y la precisión.",
+    "table": {
+      "rank": "Rango",
+      "player": "Jugador",
+      "score": "Puntuación",
+      "accuracy": "Precisión"
+    }
+  },
+  "achievements": {
+    "title": "Logros",
+    "description": "Estos son todos los logros que puedes desbloquear en tu viaje.",
+    "sign_in_prompt": {
+      "title": "¡Desbloquea tu Potencial!",
+      "description": "Juega dentro de un cliente de Farcaster como Warpcast para guardar tu progreso y ganar logros."
+    },
+    "items": {
+      "first-game": {
+        "name": "Primer Juego",
+        "description": "Jugaste tu primera partida de trivia."
+      },
+      "novice-quizzer": {
+        "name": "Interrogador Novato",
+        "description": "Respondiste 50 preguntas correctamente."
+      },
+      "crypto-enthusiast": {
+        "name": "Entusiasta Cripto",
+        "description": "Lograste más de 5,000 puntos en total."
+      },
+      "brainiac": {
+        "name": "Cerebrito",
+        "description": "Alcanzaste un 90% de precisión en una partida."
+      },
+      "top-player": {
+        "name": "Mejor Jugador",
+        "description": "Alcanzaste el puesto #1 en la tabla de clasificación."
+      },
+      "hot-streak": {
+        "name": "Racha Imparable",
+        "description": "Respondiste 10 preguntas correctamente seguidas."
+      },
+      "quiz-marathon": {
+        "name": "Maratón de Trivia",
+        "description": "Jugaste 25 partidas."
+      },
+      "duelist": {
+        "name": "Duelista",
+        "description": "Ganaste tu primer desafío contra un amigo."
+      },
+      "ai-pioneer": {
+        "name": "Pionero de IA",
+        "description": "Generaste tu primera partida de trivia con IA."
+      },
+      "power-up-user": {
+        "name": "¡Con Potencia!",
+        "description": "Usaste un potenciador por primera vez."
+      },
+      "near-perfect": {
+        "name": "Casi Perfecto",
+        "description": "Alcanzaste un 95% de precisión en una partida."
+      },
+      "quiz-legend": {
+        "name": "Leyenda del Quiz",
+        "description": "Alcanzaste el nivel 20."
+      }
+    }
+  },
+  "profile": {
+    "card": {
+      "subtitle": "Entusiasta de la Trivia Cripto"
+    },
+    "stats": {
+      "top_rank": "Mejor Rango",
+      "total_score": "Puntuación Total",
+      "games_played": "Partidas Jugadas",
+      "questions_answered": "Preguntas Respondidas",
+      "accuracy": "Precisión",
+      "level": "Nivel {level}"
+    },
+    "achievements_title": "Logros",
+    "sign_in": {
+      "title": "Ver Tu Perfil",
+      "description": "Abre esta Mini App en un cliente de Farcaster como Warpcast para ver tu perfil.",
+      "welcome": "Bienvenido, {name}",
+      "sign_out_button": "Cerrar Sesión",
+      "sign_in_button": "Iniciar sesión con Farcaster"
+    }
+  },
+  "language_switcher": {
+    "tooltip": "Cambiar idioma",
+    "title": "Idioma"
+  },
+   "notifications": {
+    "title": "Notificaciones",
+    "clear_all": "Marcar todo como leído",
+    "empty": {
+        "title": "No hay notificaciones nuevas",
+        "description": "Los nuevos logros y resultados aparecerán aquí."
+    },
+    "level_up": {
+        "title": "¡Subiste de Nivel!",
+        "description": "¡Has alcanzado el nivel {level}! ¡Sigue así!"
+    },
+    "challenge_won": {
+        "title": "¡Desafío Ganado!",
+        "description": "Derrotaste a {challenger} en un duelo de trivia."
+    },
+    "challenge_lost": {
+        "title": "Desafío Perdido",
+        "description": "Fuiste derrotado por {challenger}. ¡Mejor suerte la próxima vez!"
+    }
+  },
+  "achievement_unlocked": {
+    "title": "¡Logro Desbloqueado!",
+    "description": "Has ganado: {achievement}"
+  },
+  "classic_questions": [
+    {
+      "question": "¿Quién es el creador anónimo de Bitcoin?",
+      "answer": "Satoshi Nakamoto",
+      "options": [
+        "Vitalik Buterin",
+        "Satoshi Nakamoto",
+        "Charlie Lee",
+        "Elon Musk"
+      ]
+    },
+    {
+      "question": "¿Cómo se llama el proceso que añade nuevas transacciones a la blockchain?",
+      "answer": "Minería",
+      "options": [
+        "Forja",
+        "Staking",
+        "Minería",
+        "Acuñación"
+      ]
+    },
+    {
+      "question": "¿Qué criptomoneda es conocida por sus capacidades de contratos inteligentes?",
+      "answer": "Ethereum",
+      "options": [
+        "Bitcoin",
+        "Litecoin",
+        "Dogecoin",
+        "Ethereum"
+      ]
+    },
+    {
+      "question": "¿Qué significa 'DeFi'?",
+      "answer": "Finanzas Descentralizadas",
+      "options": [
+        "Finanzas Digitales",
+        "Finanzas Descentralizadas",
+        "Finanzas Distribuidas",
+        "Fondos Descentralizados"
+      ]
+    },
+    {
+      "question": "¿Cuál es el suministro máximo de Bitcoin?",
+      "answer": "21 millones",
+      "options": [
+        "100 millones",
+        "21 millones",
+        "42 millones",
+        "Ilimitado"
+      ]
+    },
+    {
+      "question": "¿Qué significa 'NFT'?",
+      "answer": "Token No Fungible",
+      "options": [
+        "Nuevo Tipo de Archivo",
+        "Token No Fungible",
+        "Token de Tarifa de Red",
+        "Transacción Sin Tarifa"
+      ]
+    },
+    {
+      "question": "¿Cuál de estos es un monedero de hardware popular?",
+      "answer": "Ledger",
+      "options": [
+        "MetaMask",
+        "Trust Wallet",
+        "Coinbase Wallet",
+        "Ledger"
+      ]
+    },
+    {
+      "question": "¿Qué es el 'deslizamiento' (Slippage) en el contexto del trading en DEX?",
+      "answer": "La diferencia entre el precio esperado y el precio ejecutado",
+      "options": [
+        "Un tipo de bot de arbitraje",
+        "Un error de conexión de red",
+        "La diferencia entre el precio esperado y el precio ejecutado",
+        "Una tarifa pagada a los proveedores de liquidez"
+      ]
+    },
+    {
+      "question": "¿Cuál es el término para un libro de contabilidad digital de todas las transacciones de criptomonedas?",
+      "answer": "Blockchain",
+      "options": [
+        "Cryptochain",
+        "Datastream",
+        "Blockchain",
+        "Tokenlog"
+      ]
+    },
+    {
+      "question": "¿Qué mecanismo de consenso utiliza Bitcoin?",
+      "answer": "Prueba de Trabajo (PoW)",
+      "options": [
+        "Prueba de Participación (PoS)",
+        "Prueba de Trabajo (PoW)",
+        "Prueba de Autoridad (PoA)",
+        "Prueba de Participación Delegada (DPoS)"
+      ]
+    },
+    {
+      "question": "¿Cuál es la criptomoneda nativa del exchange Binance?",
+      "answer": "BNB",
+      "options": [
+        "BUSD",
+        "BTC",
+        "BNB",
+        "BAKE"
+      ]
+    },
+    {
+      "question": "¿Qué significa 'ICO'?",
+      "answer": "Oferta Inicial de Moneda",
+      "options": [
+        "Oferta Inicial de Cripto",
+        "Oferta Inicial de Moneda",
+        "Orden Interna de Cripto",
+        "Oportunidad Instantánea de Moneda"
+      ]
+    },
+    {
+      "question": "¿Cuál de los siguientes es una 'stablecoin'?",
+      "answer": "USDC",
+      "options": [
+        "Cardano (ADA)",
+        "Solana (SOL)",
+        "USDC",
+        "Chainlink (LINK)"
+      ]
+    },
+    {
+      "question": "¿Qué es el evento 'halving' en Bitcoin?",
+      "answer": "La recompensa por minar nuevos bloques se reduce a la mitad",
+      "options": [
+        "La velocidad de las transacciones se duplica",
+        "La recompensa por minar nuevos bloques se reduce a la mitad",
+        "El suministro total de Bitcoin se reduce",
+        "La dificultad de la minería se reduce a la mitad"
+      ]
+    },
+    {
+      "question": "¿Quién es el cofundador de Ethereum?",
+      "answer": "Vitalik Buterin",
+      "options": [
+        "Charles Hoskinson",
+        "Gavin Wood",
+        "Joseph Lubin",
+        "Vitalik Buterin"
+      ]
+    },
+    {
+      "question": "¿Cuál es el caso de uso principal de Ripple (XRP)?",
+      "answer": "Pagos internacionales y remesas",
+      "options": [
+        "Aplicaciones descentralizadas",
+        "Transacciones centradas en la privacidad",
+        "Pagos internacionales y remesas",
+        "Gestión de la cadena de suministro"
+      ]
+    },
+    {
+      "question": "¿Qué es una 'tarifa de gas' en la red de Ethereum?",
+      "answer": "El costo para realizar una transacción o ejecutar un contrato",
+      "options": [
+        "Una tarifa para comprar Ethereum",
+        "El costo para realizar una transacción o ejecutar un contrato",
+        "Un impuesto sobre las ganancias de cripto",
+        "El costo de electricidad de la minería"
+      ]
+    },
+    {
+      "question": "¿Qué blockchain es el hogar nativo de la popular colección de NFT CryptoPunks?",
+      "answer": "Ethereum",
+      "options": [
+        "Solana",
+        "Ethereum",
+        "Flow",
+        "Cardano"
+      ]
+    },
+    {
+      "question": "¿Qué es una 'DAO'?",
+      "answer": "Organización Autónoma Descentralizada",
+      "options": [
+        "Organización de Activos Digitales",
+        "Organización Autónoma Descentralizada",
+        "Objeto de Acceso a Datos",
+        "Aplicación Distribuida en Línea"
+      ]
+    },
+    {
+      "question": "¿Qué criptomoneda fue creada como una bifurcación de Bitcoin?",
+      "answer": "Bitcoin Cash (BCH)",
+      "options": [
+        "Ethereum (ETH)",
+        "Litecoin (LTC)",
+        "Bitcoin Cash (BCH)",
+        "Ripple (XRP)"
+      ]
+    },
+    {
+      "question": "¿Qué es 'staking' en el contexto de las criptomonedas?",
+      "answer": "Bloquear tus criptomonedas para apoyar una red y ganar recompensas",
+      "options": [
+        "Un tipo de trading a corto plazo",
+        "Bloquear tus criptomonedas para apoyar una red y ganar recompensas",
+        "Un método para encriptar monederos",
+        "El proceso de crear nuevas monedas"
+      ]
+    },
+    {
+      "question": "¿Qué estándar siguen la mayoría de los tokens basados en Ethereum?",
+      "answer": "ERC-20",
+      "options": [
+        "ERC-721",
+        "ERC-20",
+        "ERC-1155",
+        "BEP-2"
+      ]
+    },
+    {
+      "question": "¿Qué país fue el primero en adoptar Bitcoin como moneda de curso legal?",
+      "answer": "El Salvador",
+      "options": [
+        "EE.UU.",
+        "China",
+        "Japón",
+        "El Salvador"
+      ]
+    },
+    {
+      "question": "¿Cuál es el nombre del primer proyecto de NFT de la historia?",
+      "answer": "Quantum",
+      "options": [
+        "EtherRock",
+        "CryptoPunks",
+        "Quantum",
+        "Bored Ape Yacht Club"
+      ]
+    },
+    {
+      "question": "¿Qué es el 'almacenamiento en frío' para criptomonedas?",
+      "answer": "Guardar cripto offline en un monedero de hardware o de papel",
+      "options": [
+        "Guardar cripto en un dispositivo móvil",
+        "Guardar cripto en un exchange",
+        "Guardar cripto offline en un monedero de hardware o de papel",
+        "Una cuenta de ahorros para cripto"
+      ]
+    },
+    {
+      "question": "¿Cuál de estos es un exchange descentralizado (DEX)?",
+      "answer": "Uniswap",
+      "options": [
+        "Coinbase",
+        "Binance",
+        "Kraken",
+        "Uniswap"
+      ]
+    },
+    {
+      "question": "¿Qué significa el término 'HODL' en la comunidad cripto?",
+      "answer": "Aferrarse a una criptomoneda en lugar de venderla",
+      "options": [
+        "Un indicador de análisis técnico",
+        "Un tipo de monedero cripto",
+        "Aferrarse a una criptomoneda en lugar de venderla",
+        "Una regulación gubernamental sobre cripto"
+      ]
+    },
+    {
+      "question": "¿Qué plataforma blockchain es una competidora directa de Ethereum, a menudo llamada 'asesina de Ethereum'?",
+      "answer": "Solana",
+      "options": [
+        "Dogecoin",
+        "Bitcoin",
+        "Solana",
+        "Monero"
+      ]
+    },
+    {
+      "question": "¿Qué es un 'whitepaper' en el contexto de un proyecto cripto?",
+      "answer": "Un documento que describe la tecnología, los objetivos y la tokenómica del proyecto",
+      "options": [
+        "Un manual de usuario para un monedero cripto",
+        "Un descargo de responsabilidad legal",
+        "Un documento que describe la tecnología, los objetivos y la tokenómica del proyecto",
+        "Un historial del precio del proyecto"
+      ]
+    },
+    {
+      "question": "¿Qué es la 'capitalización de mercado' o 'market cap' de una criptomoneda?",
+      "answer": "El valor total de todas las monedas en circulación",
+      "options": [
+        "El precio de una sola moneda",
+        "El volumen de trading diario",
+        "El valor total de todas las monedas en circulación",
+        "El número de usuarios activos"
+      ]
+    },
+    {
+      "question": "¿Qué lenguaje de programación se utiliza principalmente para escribir contratos inteligentes en Ethereum?",
+      "answer": "Solidity",
+      "options": [
+        "Python",
+        "JavaScript",
+        "C++",
+        "Solidity"
+      ]
+    },
+    {
+      "question": "¿Qué tipo de criptomoneda es Dogecoin (DOGE)?",
+      "answer": "Una memecoin",
+      "options": [
+        "Una stablecoin",
+        "Una moneda de privacidad",
+        "Una memecoin",
+        "Un token de gobernanza"
+      ]
+    },
+    {
+      "question": "¿Qué significa 'KYC' en el contexto de los exchanges de cripto?",
+      "answer": "Conoce a Tu Cliente",
+      "options": [
+        "Guarda Tus Cripto",
+        "Conoce Tu Código",
+        "Conoce a Tu Cliente",
+        "Moneda de Rendimiento Clave"
+      ]
+    },
+    {
+      "question": "¿Qué es un 'ataque del 51%'?",
+      "answer": "Cuando una sola entidad controla más del 50% del poder de hash de una red",
+      "options": [
+        "Una estafa de phishing",
+        "Cuando una sola entidad controla más del 50% del poder de hash de una red",
+        "Un ataque de denegación de servicio",
+        "Hackear un exchange"
+      ]
+    },
+    {
+      "question": "¿Cuál de estos NO es una criptomoneda?",
+      "answer": "NVIDIA",
+      "options": [
+        "Cardano",
+        "Polkadot",
+        "NVIDIA",
+        "Chainlink"
+      ]
+    },
+    {
+      "question": "¿Cuál es el propósito de una 'frase semilla' o 'frase de recuperación'?",
+      "answer": "Para restaurar el acceso a un monedero de criptomonedas",
+      "options": [
+        "Para encriptar datos de transacciones",
+        "Para establecer la contraseña del monedero",
+        "Para restaurar el acceso a un monedero de criptomonedas",
+        "Para conectarse a una aplicación descentralizada"
+      ]
+    },
+    {
+      "question": "¿Qué es un 'oráculo' en la tecnología blockchain?",
+      "answer": "Un servicio que proporciona datos externos a los contratos inteligentes",
+      "options": [
+        "Un tipo de algoritmo de consenso",
+        "Un servicio que proporciona datos externos a los contratos inteligentes",
+        "Una herramienta de análisis de blockchain",
+        "Un fabricante de monederos de hardware"
+      ]
+    },
+    {
+      "question": "¿Qué criptomoneda se centra en proporcionar un historial de transacciones privado e imposible de rastrear?",
+      "answer": "Monero (XMR)",
+      "options": [
+        "Ripple (XRP)",
+        "Monero (XMR)",
+        "Cardano (ADA)",
+        "Litecoin (LTC)"
+      ]
+    },
+    {
+      "question": "¿Qué es el 'bloque génesis'?",
+      "answer": "El primer bloque jamás creado en una blockchain",
+      "options": [
+        "El bloque más reciente",
+        "El bloque con la tarifa de transacción más alta",
+        "El primer bloque jamás creado en una blockchain",
+        "Un bloque que no contiene transacciones"
+      ]
+    },
+    {
+      "question": "¿Qué empresa está detrás de la stablecoin USDC?",
+      "answer": "Circle",
+      "options": [
+        "Tether",
+        "Binance",
+        "Circle",
+        "Coinbase"
+      ]
+    },
+    {
+      "question": "¿Qué es un 'contrato inteligente'?",
+      "answer": "Un contrato autoejecutable con los términos del acuerdo escritos en código",
+      "options": [
+        "Un documento digital legalmente vinculante",
+        "Un contrato autoejecutable con los términos del acuerdo escritos en código",
+        "Una plantilla para crear nuevas criptomonedas",
+        "Un tipo de préstamo cripto"
+      ]
+    },
+    {
+      "question": "¿Qué estándar de token se utiliza para crear Tokens No Fungibles (NFTs) en Ethereum?",
+      "answer": "ERC-721",
+      "options": [
+        "ERC-20",
+        "ERC-721",
+        "BEP-20",
+        "TRC-20"
+      ]
+    },
+    {
+      "question": "¿Qué significa 'ATH' en el trading de cripto?",
+      "answer": "Máximo Histórico",
+      "options": [
+        "Horas de Trading Promedio",
+        "Máximo Histórico",
+        "Anfitrión de Trading Automatizado",
+        "Tenedor de Fideicomiso de Activos"
+      ]
+    },
+    {
+      "question": "¿Quién fundó Litecoin (LTC)?",
+      "answer": "Charlie Lee",
+      "options": [
+        "Jed McCaleb",
+        "Charlie Lee",
+        "Dan Larimer",
+        "Roger Ver"
+      ]
+    },
+    {
+      "question": "¿Qué es una solución de escalado de 'Capa 2'?",
+      "answer": "Un marco o protocolo secundario construido sobre una blockchain existente",
+      "options": [
+        "Una bifurcación dura de una blockchain",
+        "Una blockchain completamente nueva",
+        "Un marco o protocolo secundario construido sobre una blockchain existente",
+        "Un tipo de cadena lateral"
+      ]
+    },
+    {
+      "question": "¿Cuál es el nombre de la plataforma de mundo virtual construida sobre la blockchain de Ethereum?",
+      "answer": "Decentraland",
+      "options": [
+        "Roblox",
+        "Second Life",
+        "Decentraland",
+        "Fortnite"
+      ]
+    },
+    {
+      "question": "¿Qué es el 'yield farming'?",
+      "answer": "La práctica de hacer staking o prestar criptoactivos para generar altos rendimientos o recompensas",
+      "options": [
+        "Un tipo de minería de cripto",
+        "La práctica de hacer staking o prestar criptoactivos para generar altos rendimientos o recompensas",
+        "Una estrategia para el day trading",
+        "Una forma de crear NFTs"
+      ]
+    },
+    {
+      "question": "¿Cuál de estas es una blockchain popular para construir juegos (GameFi)?",
+      "answer": "Flow",
+      "options": [
+        "Bitcoin",
+        "Monero",
+        "Flow",
+        "Dash"
+      ]
+    },
+    {
+      "question": "¿Qué es la 'pérdida impermanente' (impermanent loss)?",
+      "answer": "Una pérdida potencial de fondos que experimentan los proveedores de liquidez en los DEX",
+      "options": [
+        "Perder tus claves privadas",
+        "Una caída en el precio de un token",
+        "Una pérdida potencial de fondos que experimentan los proveedores de liquidez en los DEX",
+        "Una transacción fallida"
+      ]
+    },
+    {
+      "question": "¿Cuál es el nombre del protocolo de consenso de Cardano?",
+      "answer": "Ouroboros",
+      "options": [
+        "Avalanche",
+        "Tendermint",
+        "Ouroboros",
+        "Casper"
+      ]
+    },
+    {
+      "question": "¿Qué proyecto de cripto tiene como objetivo conectar todas las demás blockchains, creando un 'internet de blockchains'?",
+      "answer": "Polkadot (DOT)",
+      "options": [
+        "Chainlink (LINK)",
+        "Polkadot (DOT)",
+        "Cosmos (ATOM)",
+        "Tezos (XTZ)"
+      ]
+    },
+    {
+      "question": "¿Cuál es el término para un mercado donde los precios están cayendo?",
+      "answer": "Mercado Bajista",
+      "options": [
+        "Mercado Alcista",
+        "Mercado Estancado",
+        "Mercado Bajista",
+        "Mercado en Rango"
+      ]
+    },
+    {
+      "question": "¿Cuál de las siguientes es una característica clave de una red descentralizada?",
+      "answer": "Sin punto único de fallo",
+      "options": [
+        "Controlada por una autoridad central",
+        "Requiere permiso para participar",
+        "Sin punto único de fallo",
+        "Velocidades de transacción lentas"
+      ]
+    },
+    {
+      "question": "¿Qué es una 'bifurcación dura' (hard fork) en una blockchain?",
+      "answer": "Una divergencia permanente de la versión anterior de la blockchain",
+      "options": [
+        "Una actualización temporal de la red",
+        "Una actualización de software para un monedero",
+        "Una divergencia permanente de la versión anterior de la blockchain",
+        "Un ajuste menor del protocolo"
+      ]
+    },
+    {
+      "question": "¿Qué es MetaMask?",
+      "answer": "Un monedero de criptomonedas de software utilizado para interactuar con la blockchain de Ethereum",
+      "options": [
+        "Un monedero de hardware",
+        "Un exchange de cripto",
+        "Un explorador de blockchain",
+        "Un monedero de criptomonedas de software utilizado para interactuar con la blockchain de Ethereum"
+      ]
+    },
+    {
+      "question": "¿Cuál es el propósito principal de la red Chainlink (LINK)?",
+      "answer": "Proporcionar datos fiables y a prueba de manipulaciones a los contratos inteligentes",
+      "options": [
+        "Crear transacciones privadas",
+        "Escalar la red de Ethereum",
+        "Proporcionar datos fiables y a prueba de manipulaciones a los contratos inteligentes",
+        "Construir redes sociales descentralizadas"
+      ]
+    },
+    {
+      "question": "El 'flippening' se refiere al momento hipotético en que...",
+      "answer": "La capitalización de mercado de Ethereum supera a la de Bitcoin",
+      "options": [
+        "El precio de Bitcoin alcanza los $100,000",
+        "El gobierno de EE.UU. aprueba un ETF de Bitcoin",
+        "La capitalización de mercado de Ethereum supera a la de Bitcoin",
+        "Los NFTs se vuelven más valiosos que las criptomonedas"
+      ]
+    },
+    {
+      "question": "¿Qué mercado de NFT es el más grande por volumen de trading?",
+      "answer": "OpenSea",
+      "options": [
+        "Rarible",
+        "SuperRare",
+        "OpenSea",
+        "Magic Eden"
+      ]
+    },
+    {
+      "question": "¿Qué es un 'rug pull' en el espacio cripto?",
+      "answer": "Una estafa donde los desarrolladores abandonan un proyecto y se llevan los fondos de los inversores",
+      "options": [
+        "Una caída repentina del precio",
+        "Un tipo de manipulación del mercado",
+        "Una estafa donde los desarrolladores abandonan un proyecto y se llevan los fondos de los inversores",
+        "Un airdrop fallido"
+      ]
+    },
+    {
+      "question": "¿Cuál es el token nativo de la blockchain de Solana?",
+      "answer": "SOL",
+      "options": [
+        "ADA",
+        "DOT",
+        "AVAX",
+        "SOL"
+      ]
+    },
+    {
+      "question": "¿Qué es el 'sharding'?",
+      "answer": "Una técnica de particionamiento de bases de datos utilizada para aumentar la escalabilidad",
+      "options": [
+        "Un tipo de algoritmo de consenso",
+        "Una técnica de particionamiento de bases de datos utilizada para aumentar la escalabilidad",
+        "Una forma de crear cadenas laterales",
+        "Un método para encriptar datos"
+      ]
+    },
+    {
+      "question": "¿Cuál de estos es un navegador web centrado en la privacidad con un monedero cripto incorporado?",
+      "answer": "Brave",
+      "options": [
+        "Chrome",
+        "Brave",
+        "Firefox",
+        "Safari"
+      ]
+    },
+    {
+      "question": "¿Cuál es el token asociado con el navegador Brave?",
+      "answer": "Basic Attention Token (BAT)",
+      "options": [
+        "Brave Coin (BVC)",
+        "Attention Token (ATN)",
+        "Basic Attention Token (BAT)",
+        "Browser Coin (BRC)"
+      ]
+    },
+    {
+      "question": "¿Quién es el fundador de Cardano (ADA)?",
+      "answer": "Charles Hoskinson",
+      "options": [
+        "Vitalik Buterin",
+        "Charles Hoskinson",
+        "Brendan Eich",
+        "Gavin Wood"
+      ]
+    },
+    {
+      "question": "¿Qué es una transacción 'sin gas'?",
+      "answer": "Una transacción donde el usuario no tiene que pagar la tarifa de gas directamente",
+      "options": [
+        "Una transacción sin tarifa",
+        "Una transacción que no se registra en la blockchain",
+        "Una transacción donde el usuario no tiene que pagar la tarifa de gas directamente",
+        "Una transacción offline"
+      ]
+    },
+    {
+      "question": "¿Qué significa 'EIP' en el contexto de Ethereum?",
+      "answer": "Propuesta de Mejora de Ethereum",
+      "options": [
+        "Protocolo Interno de Ethereum",
+        "Plan de Inversión de Ethereum",
+        "Propuesta de Mejora de Ethereum",
+        "Plataforma Integrada de Ethereum"
+      ]
+    },
+    {
+      "question": "¿Qué mecanismo de consenso se considera generalmente más eficiente energéticamente?",
+      "answer": "Prueba de Participación (PoS)",
+      "options": [
+        "Prueba de Trabajo (PoW)",
+        "Prueba de Participación (PoS)",
+        "Ambos son iguales",
+        "Ninguno es eficiente energéticamente"
+      ]
+    },
+    {
+      "question": "¿Cómo se llama a una criptomoneda que es una copia de otra, con cambios menores?",
+      "answer": "Una bifurcación",
+      "options": [
+        "Un clon",
+        "Una bifurcación",
+        "Un duplicado",
+        "Un espejo"
+      ]
+    },
+    {
+      "question": "¿Qué evento en 2014 llevó a la pérdida de 850,000 BTC?",
+      "answer": "El hackeo de Mt. Gox",
+      "options": [
+        "El hackeo de The DAO",
+        "La incautación de Silk Road",
+        "El hackeo de Mt. Gox",
+        "El hackeo de Bitfinex"
+      ]
+    },
+    {
+      "question": "¿Cuál es la función principal de un explorador de blockchain como Etherscan?",
+      "answer": "Ver transacciones, bloques y direcciones en la blockchain",
+      "options": [
+        "Comerciar criptomonedas",
+        "Crear contratos inteligentes",
+        "Ver transacciones, bloques y direcciones en la blockchain",
+        "Almacenar claves privadas"
+      ]
+    },
+    {
+      "question": "¿Qué es una 'dApp'?",
+      "answer": "Una aplicación descentralizada",
+      "options": [
+        "Una aplicación digital",
+        "Una aplicación distribuida",
+        "Una aplicación descargable",
+        "Una aplicación descentralizada"
+      ]
+    },
+    {
+      "question": "¿Cuál es el propósito del 'nonce' en una transacción de Bitcoin?",
+      "answer": "Un número que los mineros deben encontrar para resolver un bloque",
+      "options": [
+        "El monto de la transacción",
+        "La dirección del destinatario",
+        "Un número que los mineros deben encontrar para resolver un bloque",
+        "Una marca de tiempo"
+      ]
+    },
+    {
+      "question": "¿Qué proyecto está desarrollando una 'computadora mundial' que puede alojar dApps a escala?",
+      "answer": "Internet Computer (ICP)",
+      "options": [
+        "Filecoin (FIL)",
+        "Internet Computer (ICP)",
+        "Helium (HNT)",
+        "Theta (THETA)"
+      ]
+    },
+    {
+      "question": "¿Qué significa 'P2P' en 'red P2P'?",
+      "answer": "Par a Par",
+      "options": [
+        "Persona a Persona",
+        "Par a Par",
+        "Contraseña a Contraseña",
+        "Protocolo a Protocolo"
+      ]
+    },
+    {
+      "question": "¿Qué es una 'quema de tokens'?",
+      "answer": "Eliminar permanentemente tokens de la circulación",
+      "options": [
+        "Vender tokens con pérdidas",
+        "Intercambiar un token por otro",
+        "Eliminar permanentemente tokens de la circulación",
+        "Un tipo de distribución de tokens"
+      ]
+    },
+    {
+      "question": "¿Cuál es el objetivo principal del protocolo The Graph (GRT)?",
+      "answer": "Indexar y consultar datos de blockchains",
+      "options": [
+        "Proporcionar almacenamiento descentralizado",
+        "Crear gráficos 3D para el metaverso",
+        "Indexar y consultar datos de blockchains",
+        "Ofrecer seguros descentralizados"
+      ]
+    },
+    {
+      "question": "¿Cuál de las siguientes es una plataforma popular para lanzar DAOs?",
+      "answer": "Aragon",
+      "options": [
+        "Uniswap",
+        "Aave",
+        "Aragon",
+        "Compound"
+      ]
+    },
+    {
+      "question": "¿Qué es la 'bomba de dificultad' en Ethereum?",
+      "answer": "Un mecanismo diseñado para hacer la minería más difícil con el tiempo para fomentar el paso a PoS",
+      "options": [
+        "Un tipo de malware dirigido a mineros",
+        "Un aumento repentino de las tarifas de gas",
+        "Un mecanismo diseñado para hacer la minería más difícil con el tiempo para fomentar el paso a PoS",
+        "Una vulnerabilidad en los contratos inteligentes"
+      ]
+    },
+    {
+      "question": "¿Qué significa 'CeFi'?",
+      "answer": "Finanzas Centralizadas",
+      "options": [
+        "Finanzas Comunitarias",
+        "Cripto Finanzas",
+        "Finanzas Centralizadas",
+        "Finanzas Corporativas"
+      ]
+    },
+    {
+      "question": "¿Cuál de estas es una red de almacenamiento de archivos descentralizada?",
+      "answer": "Filecoin (FIL)",
+      "options": [
+        "Dropbox",
+        "Google Drive",
+        "Filecoin (FIL)",
+        "iCloud"
+      ]
+    },
+    {
+      "question": "¿Qué es un 'préstamo flash'?",
+      "answer": "Un préstamo sin garantía que debe ser devuelto dentro del mismo bloque de transacción",
+      "options": [
+        "Un préstamo que se aprueba al instante",
+        "Un préstamo con una tasa de interés muy alta",
+        "Un préstamo sin garantía que debe ser devuelto dentro del mismo bloque de transacción",
+        "Un préstamo para comprar criptomonedas"
+      ]
+    },
+    {
+      "question": "¿Qué blockchain utiliza el mecanismo de consenso 'Prueba de Historia'?",
+      "answer": "Solana",
+      "options": [
+        "Ethereum",
+        "Cardano",
+        "Polkadot",
+        "Solana"
+      ]
+    },
+    {
+      "question": "¿Cuál es el nombre de la actualización que hizo la transición de Ethereum a Prueba de Participación?",
+      "answer": "The Merge",
+      "options": [
+        "The Beacon",
+        "The Surge",
+        "The Merge",
+        "The Verge"
+      ]
+    },
+    {
+      "question": "¿Qué proyecto de NFT presenta una colección de 10,000 personajes pixelados únicos?",
+      "answer": "CryptoPunks",
+      "options": [
+        "Bored Ape Yacht Club",
+        "Meebits",
+        "CryptoPunks",
+        "Cool Cats"
+      ]
+    },
+    {
+      "question": "¿Qué es un 'token de gobernanza'?",
+      "answer": "Un token que otorga a los poseedores derechos de voto en el futuro de un proyecto",
+      "options": [
+        "Un token utilizado para pagar servicios gubernamentales",
+        "Un token que representa la propiedad de un activo del mundo real",
+        "Un token que otorga a los poseedores derechos de voto en el futuro de un proyecto",
+        "Una stablecoin vinculada a una moneda nacional"
+      ]
+    },
+    {
+      "question": "¿Cuál es el activo nativo del ecosistema Cosmos?",
+      "answer": "ATOM",
+      "options": [
+        "DOT",
+        "LINK",
+        "ATOM",
+        "XTZ"
+      ]
+    },
+    {
+      "question": "¿Qué es un 'intercambio atómico' (atomic swap)?",
+      "answer": "Una forma de intercambiar criptomonedas directamente entre diferentes blockchains sin un intermediario",
+      "options": [
+        "Una transacción muy rápida",
+        "Un tipo de exchange descentralizado",
+        "Una forma de intercambiar criptomonedas directamente entre diferentes blockchains sin un intermediario",
+        "Una transacción que no se puede revertir"
+      ]
+    },
+    {
+      "question": "¿Qué protocolo es una plataforma líder de préstamos y empréstitos descentralizados?",
+      "answer": "Aave",
+      "options": [
+        "Curve",
+        "MakerDAO",
+        "Aave",
+        "Balancer"
+      ]
+    },
+    {
+      "question": "¿Cuál es el nombre de la stablecoin de Tether?",
+      "answer": "USDT",
+      "options": [
+        "USDC",
+        "BUSD",
+        "DAI",
+        "USDT"
+      ]
+    },
+    {
+      "question": "¿Qué es un 'Satoshi'?",
+      "answer": "La unidad más pequeña de un Bitcoin",
+      "options": [
+        "Un tipo de monedero de Bitcoin",
+        "La unidad más pequeña de un Bitcoin",
+        "Un equipo de minería de Bitcoin",
+        "El creador de Bitcoin"
+      ]
+    },
+    {
+      "question": "¿Cuál de estas es una red inalámbrica descentralizada impulsada por blockchain?",
+      "answer": "Helium (HNT)",
+      "options": [
+        "Verizon",
+        "AT&T",
+        "Helium (HNT)",
+        "T-Mobile"
+      ]
+    },
+    {
+      "question": "¿Qué es una 'cadena lateral' (sidechain)?",
+      "answer": "Una blockchain separada que está conectada a una blockchain principal",
+      "options": [
+        "Una copia de la blockchain principal",
+        "Una bifurcación temporal",
+        "Una blockchain separada que está conectada a una blockchain principal",
+        "Una solución de capa 2"
+      ]
+    },
+    {
+      "question": "¿Cuál es el propósito de los tokens 'envueltos' como wBTC?",
+      "answer": "Representar una criptomoneda de otra blockchain en una red diferente",
+      "options": [
+        "Aumentar el precio de un token",
+        "Hacer que un token sea más seguro",
+        "Representar una criptomoneda de otra blockchain en una red diferente",
+        "Reducir las tarifas de transacción"
+      ]
+    },
+    {
+      "question": "¿Cuál de estos es un monedero popular para la blockchain de Solana?",
+      "answer": "Phantom",
+      "options": [
+        "MetaMask",
+        "Phantom",
+        "Trust Wallet",
+        "Exodus"
+      ]
+    },
+    {
+      "question": "¿Qué significa 'FUD' en la comunidad cripto?",
+      "answer": "Miedo, Incertidumbre y Duda",
+      "options": [
+        "Para Distribución Universal",
+        "Futuros en Desarrollo",
+        "Miedo, Incertidumbre y Duda",
+        "Decisión Rápida Unilateral"
+      ]
+    },
+    {
+      "question": "¿Qué país tiene el mayor volumen de comercio de criptomonedas?",
+      "answer": "Estados Unidos",
+      "options": [
+        "China",
+        "Rusia",
+        "Nigeria",
+        "Estados Unidos"
+      ]
+    },
+    {
+      "question": "¿Cuál es el número máximo de transacciones por segundo (TPS) que Bitcoin puede manejar?",
+      "answer": "Alrededor de 7",
+      "options": [
+        "Alrededor de 7",
+        "Alrededor de 30",
+        "Alrededor de 1,000",
+        "Alrededor de 65,000"
+      ]
+    },
+    {
+      "question": "¿Cuál es el nombre de la stablecoin creada por MakerDAO?",
+      "answer": "DAI",
+      "options": [
+        "MKR",
+        "DAI",
+        "SAI",
+        "USDM"
+      ]
+    },
+    {
+      "question": "¿Cuál de estos es un tipo de mecanismo de consenso que se basa en la reputación de un nodo?",
+      "answer": "Prueba de Autoridad (PoA)",
+      "options": [
+        "Prueba de Trabajo (PoW)",
+        "Prueba de Participación (PoS)",
+        "Prueba de Autoridad (PoA)",
+        "Prueba de Quema (PoB)"
+      ]
+    },
+    {
+      "question": "¿En qué año se publicó el whitepaper de Bitcoin?",
+      "answer": "2008",
+      "options": [
+        "2008",
+        "2009",
+        "2010",
+        "2011"
+      ]
+    },
+    {
+      "question": "¿Cuál es la principal ventaja de usar un monedero de hardware?",
+      "answer": "Mantiene tus claves privadas offline y seguras",
+      "options": [
+        "Tiene una interfaz fácil de usar",
+        "Admite todas las criptomonedas",
+        "Ofrece altas recompensas de staking",
+        "Mantiene tus claves privadas offline y seguras"
+      ]
+    },
+    {
+      "question": "¿Qué exchange fue famosamente hackeado en 2016, lo que llevó a una bifurcación dura de Ethereum?",
+      "answer": "The DAO",
+      "options": [
+        "Mt. Gox",
+        "Bitfinex",
+        "The DAO",
+        "Cryptopia"
+      ]
+    }
+  ]
+}
