@@ -2,6 +2,7 @@
 'use client';
 
 import type { ReactNode } from 'react';
+import { OnchainKitProvider } from '@coinbase/onchainkit';
 import { I18nProvider } from '@/hooks/use-i18n';
 import { NotificationsProvider } from '@/hooks/use-notifications';
 import { FarcasterIdentityProvider } from '@/hooks/use-farcaster-identity';
@@ -26,14 +27,19 @@ export function Providers({ children }: { children: ReactNode }) {
   return (
     <WagmiProvider config={config}>
       <QueryClientProvider client={queryClient}>
-        <I18nProvider>
-          <FarcasterIdentityProvider>
-            <NotificationsProvider>
-              {children}
-              <HotToaster />
-            </NotificationsProvider>
-          </FarcasterIdentityProvider>
-        </I18nProvider>
+        <OnchainKitProvider
+          apiKey={process.env.NEXT_PUBLIC_ONCHAINKIT_API_KEY}
+          chain={base}
+        >
+          <I18nProvider>
+            <FarcasterIdentityProvider>
+              <NotificationsProvider>
+                {children}
+                <HotToaster />
+              </NotificationsProvider>
+            </FarcasterIdentityProvider>
+          </I18nProvider>
+        </OnchainKitProvider>
       </QueryClientProvider>
     </WagmiProvider>
   );

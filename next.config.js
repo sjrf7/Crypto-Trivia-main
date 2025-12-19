@@ -22,9 +22,10 @@ const nextConfig = {
       }
     ],
   },
-   webpack: (config, { isServer }) => {
+  transpilePackages: ['@coinbase/onchainkit'],
+  webpack: (config, { isServer }) => {
     if (!isServer) {
-        config.externals.push('pino-pretty', 'lokijs', 'encoding');
+      config.externals.push('pino-pretty', 'lokijs', 'encoding');
     }
     if (isServer) {
       // These modules are not used in the server-side code and can be externalized
@@ -38,7 +39,7 @@ const nextConfig = {
         '@genkit-ai/firebase', // Explicitly externalize the problematic module
         'firebase-admin',
         'express',
-         // Genkit plugins depending on grpc may not work properly.
+        // Genkit plugins depending on grpc may not work properly.
         'grpc',
         '@grpc/grpc-js'
       );
