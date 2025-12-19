@@ -2,7 +2,7 @@
 'use client';
 
 import { createContext, useContext, useState, useEffect, ReactNode } from 'react';
-import sdk from '@farcaster/frame-sdk';
+import sdk from '@farcaster/miniapp-sdk';
 
 // Define the user profile structure based on what your API returns
 export interface FarcasterUserProfile {
@@ -33,20 +33,21 @@ export function FarcasterIdentityProvider({ children }: { children: ReactNode })
         // 1. Try to get identity from Farcaster SDK Context (Mini App)
         // Note: We need to wait for the SDK to be ready or check if it's already there
         // In a real mini app, the SDK initializes and provides context.
-        if (typeof window !== 'undefined' && window.FarcasterSDK && window.FarcasterSDK.context) {
-          const context = await window.FarcasterSDK.context; // Ensure we await if it's a promise in the specific SDK version
-          if (context && context.user) {
-            setFarcasterProfile({
-              fid: context.user.fid,
-              username: context.user.username,
-              display_name: context.user.displayName,
-              pfp_url: context.user.pfpUrl,
-              // bio is not always in context.user, might need separate fetch if critical
-            });
-            setAuthenticated(true);
-            setLoading(false);
-            return;
-          }
+        // 1. Try to get identity from Farcaster SDK Context (Mini App)
+        // Note: We need to wait for the SDK to be ready or check if it's already there
+        // In a real mini app, the SDK initializes and provides context.
+        const context = await sdk.context;
+        if (context && context.user) {
+          setFarcasterProfile({
+            fid: context.user.fid,
+            username: context.user.username,
+            display_name: context.user.displayName,
+            pfp_url: context.user.pfpUrl,
+            // bio is not always in context.user, might need separate fetch if critical
+          });
+          setAuthenticated(true);
+          setLoading(false);
+          return;
         }
 
         // 2. Fallback: Local testing via signer_uuid

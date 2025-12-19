@@ -11,6 +11,7 @@ import { Header } from '@/components/layout/Header';
 import { BackgroundMusicProvider } from '@/components/layout/BackgroundMusic';
 import { useEffect } from 'react';
 import Script from 'next/script';
+import sdk from '@farcaster/frame-sdk';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -35,9 +36,13 @@ export default function RootLayout({
 
   useEffect(() => {
     // This tells the Farcaster client that the app is ready to be displayed.
-    // We check if the SDK is available on the window object before calling it.
-    if (window.FarcasterSDK) {
-      window.FarcasterSDK.actions.ready();
+    const load = async () => {
+      sdk.actions.ready();
+    };
+
+    // We check if the SDK is available before calling it.
+    if (sdk && sdk.actions) {
+      load();
     }
   }, []);
 
