@@ -1,4 +1,3 @@
-
 'use client';
 
 import { createContext, useContext, useState, useEffect, ReactNode } from 'react';
@@ -31,11 +30,15 @@ export function FarcasterIdentityProvider({ children }: { children: ReactNode })
       setLoading(true);
       try {
         // 1. Try to get identity from Farcaster SDK Context (Mini App)
-        // Note: We need to wait for the SDK to be ready or check if it's already there
-        // In a real mini app, the SDK initializes and provides context.
-        // 1. Try to get identity from Farcaster SDK Context (Mini App)
-        // Note: We need to wait for the SDK to be ready or check if it's already there
-        // In a real mini app, the SDK initializes and provides context.
+        // We call ready() here to signal the app is initialized (safe to call multiple times)
+        try {
+          if (sdk?.actions?.ready) {
+            sdk.actions.ready();
+          }
+        } catch (err) {
+          console.error("Failed to call sdk.actions.ready:", err);
+        }
+
         const context = await sdk.context;
         if (context && context.user) {
           setFarcasterProfile({
@@ -43,10 +46,19 @@ export function FarcasterIdentityProvider({ children }: { children: ReactNode })
             username: context.user.username,
             display_name: context.user.displayName,
             pfp_url: context.user.pfpUrl,
-            // bio is not always in context.user, might need separate fetch if critical
           });
           setAuthenticated(true);
           setLoading(false);
+
+          // Auto-subscribe/Add Frame request
+          try {
+            // Cast to any because addFrame might be missing in type definition if it's new/beta
+            if ((sdk.actions as any).addFrame) {
+              await (sdk.actions as any).addFrame();
+            }
+          } catch (e) {
+            console.error("Failed to auto-add frame:", e);
+          }
           return;
         }
 
@@ -76,10 +88,6 @@ export function FarcasterIdentityProvider({ children }: { children: ReactNode })
       }
     };
 
-    // We might need to wait for the SDK to be ready. 
-    // A simple timeout or event listener could be better, but for now let's just run it.
-    // If the SDK loads AFTER this hook, we might miss it. 
-    // However, since we load the script in layout with strategy="beforeInteractive", it should be there.
     checkFarcasterIdentity();
   }, []);
 
